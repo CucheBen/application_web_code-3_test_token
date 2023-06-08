@@ -1,20 +1,32 @@
+
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <BandeauSupp />
+    
+    <router-view />
+
+  </div>
+
 </template>
 
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BandeauSupp from './components/bandeau_supp.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    BandeauSupp,
+  },
+  data(){
+return {
+  user:null
 }
-</script>
 
-<style>
+  }
+};
+</script>
+<style >
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
